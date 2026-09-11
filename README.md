@@ -1,5 +1,18 @@
-
+# 环境要求
+* 请确保您的电脑已安装 GO 1.16+ 版本并正确配置了环境变量。
+* 若未安装，请前往[GO官网](https://go.dev/dl/)下载。
 # [Gin Web Framework](https://github.com/gin-gonic/gin)
+
+ **! 现代项目依赖管理提示**
+
+如果你使用的是Go 1.16+ 版本（强烈推荐），你的项目默认会使用**Go Modules**来管理依赖。这意味着你**不需要**安装额外的包管理工具（如文档下面提到的Govendor）。
+
+你只需要在项目根目录运行以下命令，系统会自动帮你下载并管理好所有依赖版本：
+ ```bash
+ go mod init 你的项目名
+ go get github.com/gin-gonic/gin
+ ```
+
 
 <img align="right" width="159px" src="https://raw.githubusercontent.com/gin-gonic/logo/master/color.png">
 
